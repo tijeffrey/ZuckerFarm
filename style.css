@@ -1,0 +1,216 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+#Logo{
+    height: 80%;
+}
+
+nav{
+    height: 100px;
+    background-color: rgb(241, 241, 229);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .MainMenu{
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+}
+
+.home{
+    background-image: url("images/BackgroundImage.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    clip-path: polygon(100% 100%, 50% 94%, 0% 100%, 0% 0%, 100% 0%);
+}
+
+nav .MainMenu a{
+    font-size: 2rem;
+    display: inline;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2px 8px;
+    cursor: pointer;
+    color:rgb(15, 2, 69)
+}
+
+nav .MainMenu a:hover{
+background:rgb(255, 157, 77)
+}
+
+nav .icons {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.home .hometext{
+    width: 40%;
+    text-align: center;
+}
+
+.home .hometext h2{
+    font-size: 3rem;
+    color: #333;
+}
+
+.home .hometext p{
+    font-size: 2rem;
+    color: #333;
+    padding: 1rem 0;
+}
+
+.btn{
+    display: inline-block;
+    padding: .8rem 3rem;
+    background: linear-gradient(to right, rgb(51, 0, 255), rgb(80, 61, 255));
+    color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    cursor: pointer;
+    font-size: 2.5rem;
+}
+
+.btn:hover{
+    background: white;
+}
+
+#products h2{
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.products .inseason{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px;
+}
+
+.products .inseason .image{
+    height: 250px;
+    width: 275px; 
+    border: 10px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    overflow: hidden; 
+    cursor: pointer;
+  }
+
+  .products .inseason .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+  }
+
+  .products .inseason .image:hover{
+    transform: scale(1.1);
+  }
+
+.testimonials{
+    margin: 5rem 0px;
+}
+
+.testimonials h1{
+    margin: 2rem 0px;
+}
+
+.testimonials .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 5rem;
+}
+
+.testimonials .box-container .box{
+    flex: 1 1 30rem;
+}
+
+.box img{
+    border-radius: 30rem;
+    border: solid black 2px; 
+}
+
+  form{
+    max-width: 550px;
+    width: 90%;
+    background: white;
+    margin: 17vh auto 0 auto;
+    padding: 40px;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+
+  h1{
+    margin: 0;
+    text-align: center;
+  }
+
+  label{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid #D3D3D3;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-bottom: 1px solid rgb(255, 0, 106)
+}
+
+textarea::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 0, 106);
+}
+
+.center{
+    text-align: center;
+}
+
+input[type="submit"] {
+    margin-top: 30px; 
+    width: 90%;
+    max-width: 200px;
+    background: linear-gradient(to right, rgb(255, 0, 106), rgb(255,67, 61));
+    color: white;
+    font-size: 1.6rem;
+}
+
+.error{
+    color: red;
+}
+
+.error-border{
+    border-bottom: 1px solid red;
+}
+
+#success{
+    color: green;
+}

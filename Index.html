@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous"/>
+</head>
+<body>
+    <nav>
+        <img id="Logo" src="images/Logo.png" alt="Logo">
+        <ul class="MainMenu">
+            <a href="Home.html">Home</a>
+            <a href="Products.html">Products</a>
+            <a href="About Us">About Us</a>
+            <a href="Testimonials.html">Testimonials</a>
+            <a href="Contact">Contact</a>
+        </ul>
+
+        <span class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-github"></i>
+        </span>
+    </nav>
+    
+    <section class="home" id="home">
+        <div class="hometext">
+        <h2>The Best Produce in Ontario!</h2>
+        <p>Home of the juiciest and freshest produce in Ontario.  Come over to pick your own produce that will complement any meal that you prepare!  Our selection is unmatched.</p>
+        <a href="#" class="btn">Contact Us</a>
+        </div>
+    </section>
+
+    <section class="products" id="products">
+        <h2>Available Produce</h2>
+        <div class="inseason">
+            <img class="image" src="images/apples.jpg">
+            <img class="image" src="images/beans.jpg">
+            <img class="image" src="images/beets.jpg">
+            <img class="image" src="images/cherries.jpg">
+            <img class="image" src="images/kale.jpg">
+            <img class="image" src="images/tomatoes.jpg">
+        </div>
+
+    </section>
+
+    <section class="testimonials">
+        <h1>Testimonials</h1>
+        <div class="box-container">
+        <div class="box">
+        <h3>Cyndi Deo</h3>
+        <img src="images/pic1.png">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <p>I had a great time with the family at Zucker's Farm! They have a huge area where you can wander around and look for produce that suits your tastes!  I made pasta with the zuchinni and tomatoes that I picked from the farm, and it tasted much better than if I had bought the same ingredients from the grocery store.  Highly recommended!</p>
+        </div>
+
+        <div class="box">
+        <h3>Mike Atherton</h3>
+        <img src="images/pic2.png">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <p>I went with my partner to Zucker's Farm!  The staff there were very knowledgeable and friendly; they gave us plenty of tips on how to pick our fruits and vegetables.  My partner and I picked kale, spinach, and tomatoes, and we gave them to family and friends.  Now, all of them are planning their own trips to Zucker's to get their own produce!</p>
+        </div>
+
+        <div class="box">
+        <img src="images/pic3.png">
+        <h3>Cori Rose</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <p>Looking for something to do on the weekend, I found out about Zucker's Farm.  They have a section flower section, where you can create your own bouquet!  I made a beautiful bouquet for my mother-in-law, and she was absolutely floored!</p>
+        </div>
+        </div>
+    
+    </section>
+
+    <section class="contact">
+        <form onsubmit="event.preventDefault(); validateForm()">
+            <h2>Contact Us</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your name">
+            <small class="error"></small>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Your email">
+            <small class="error"></small>
+
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Your message" rows="6"></textarea>
+            <small class="error"></small>
+
+        <div class="center">
+            <input type="submit" value="Send Message">
+            <p id="success"></p>
+        </div>
+        </form>
+    </section>
+
+<script src="script.js"></script>
+</body>
+</html>
